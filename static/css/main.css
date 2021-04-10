@@ -115,6 +115,12 @@ p.lead {
   font-size: 2.566rem;
   color: var(--black);
 }
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .wave {
   animation: wave 2.5s;
   animation-delay: 1.5s;
