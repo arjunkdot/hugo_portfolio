@@ -11,24 +11,43 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/main.css">
     <title>{{ .Site.Title }}</title>
 </head>
-<header>
-    <nav class="navbar">
-        <h1 class="navbar-brand sans-font">Arjun K.</h1>
-    </nav>
-</header>
+
 <body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="navbar-brand">Arjun K.</a>
+            <div class="social-container">
+                <a href="https://twitter.com/arjunkdot" class="social-icon mr" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://dribbble.com/arjunkdot" class="social-icon mr" target="_blank"><i
+                        class="fab fa-dribbble"></i></a>
+                <a href="https://github.com/arjunkdot" class="social-icon mr" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://goodreads.com/arjunkdot" class="social-icon" target="_blank"><i
+                        class="fab fa-goodreads"></i></a>
+            </div>
+        </nav>
+    </header>
     <main class="main-content">
         {{ block "main" . }}
         {{ end }}
     </main>
     <footer class="footer-container">
-        <div class="footer sans-font">
-            <p class="footer-text">Built with <a href="https://gohugo.io" target="_blank">Hugo</a></p>
+        <p class="footer-text">Built with <a href="https://gohugo.io" target="_blank">Hugo</a></p>
+        <div class="stream-container">
+            <i class="fas fa-headphones-alt mr-4"></i> 
+            <span id="streaminfo"></span>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/audioscrobbler.js"></script>
 </body>
 
 </html>
