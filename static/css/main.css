@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Neuton:wght@200;300;400;700&display=swap');
+
+:root{
+/* COLORS */
+--primary: #8D324C;
+--dark-primary: #71283d;
+--very-dark-primary: #2a0f17;
+--brown: #574145;
+--red: #ee5253;
+--dark-red: #be4242;
+--dark-brown: #463437;
+--pale-brown: #BEA5A9;
+--dark-pale-brown: #ab9598;
+--green: #7F7403;
+--pale-green: #B7A841;
+--white: #FFFFFF;
+--pale-white: #F5F5F5;
+
+/* MISC */
+--max-width: 1000px;
+}
+body{
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: var(--white);
+}
+h1{
+    font-size: 3.247rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px var(--dark-primary);
+}
+p.lead{
+    font-size: 3.052rem;
+    margin-top: -1rem;
+
+    text-shadow: 2px 2px 0px var(--dark-primary);
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+    background: linear-gradient(to bottom,transparent 0,transparent 83%,var(--red) 83%,var(--red) 100%);
+}
+a:hover{
+    background: linear-gradient(to bottom,transparent 0,transparent 83%,var(--dark-red) 83%,var(--dark-red) 100%);
+    transition: 0.3s ease-in-out;
+}
+
+.sans-font{
+    font-family: 'Montserrat', sans-serif;
+}
+.serif-font{
+    font-family: 'Neuton', 'sans-serif';
+}
+.navbar{
+    background-color: var(--brown);
+    color: var(--white);
+    margin-top: 0 !important;
+    border-bottom: 5px solid var(--dark-brown);
+    padding: 0.8rem 2rem;
+}
+.navbar .navbar-brand{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0px var(--dark-brown);
+}
+.hero{
+    background-color: var(--primary);
+}
+.hero-intro{
+    max-width: 950px;
+    padding: 4rem 1.5rem;
+}
+.restrict-width{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+.what-i-do{
+    margin: 0 0;
+    background-color: var(--dark-primary);
+    padding: 3rem 2rem 5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 0px#632335;
+}
+.what-i-do h2{
+    font-size: 2.281rem;
+}
+.what-i-do .skills ul{
+    padding-left: 30px;
+}
+.what-i-do .skills ul > li{
+    font-size: 2.027rem;
+    line-height: 1.5;
+}
+.footer-container{
+    background-color: var(--very-dark-primary);
+}
+.footer{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
